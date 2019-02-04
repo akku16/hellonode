@@ -10,7 +10,7 @@ node {
     }
     stage('Run image'){
         dir("/Users/digicodeanuj/Desktop/AS/project"){
-        sh 'docker run -it -p 8000:8000 getintodevops/hellonode'
+        sh 'docker run -p 8000:8000 getintodevops/hellonode'
         }
     }
     //stage('Test image') {
