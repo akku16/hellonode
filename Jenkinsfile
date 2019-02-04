@@ -9,7 +9,9 @@ node {
         app = docker.build("getintodevops/hellonode")
     }
     stage('Run image'){
-     sh 'docker run -it -p 8000:8000 getintodevops/hellonode'
+     app.inside {
+        sh 'docker run -it -p 8000:8000 getintodevops/hellonode'
+        }
     }
     //stage('Test image') {
      //   app.inside {
