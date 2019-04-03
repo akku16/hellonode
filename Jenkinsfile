@@ -13,6 +13,7 @@ node {
         sh 'docker run -t -d -p 8000:8000 getintodevops/hellonode'
         }
     }
+    //>
     //stage('Test image') {
      //   app.inside {
        //     sh 'echo "Tests passed"'
